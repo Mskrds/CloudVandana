@@ -1,0 +1,68 @@
+B. Create a survey form with Fields; First Name, Last Name, Date of Birth, Country (dropdown), 
+Gender (checkbox), Profession, email, and mobile number. All the input fields are 
+necessary to submit the form. Create two buttons Submit and Reset. Reset will reset the 
+form while clicking on submit, first, it will check all the fields and necessary validations and 
+then a popup will appear displaying all the selected values with the label in front of it. On 
+closing the popup, the form should reset all the values. Use the following for references
+----------------------------------------------------------------------------------
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Form</title>
+
+
+<style type="text/css">
+
+	#div1{
+	background:blue;
+	color: white;
+	width: 1000px;
+	height: 700px;
+	margin-left: 100px;
+	/*align-items: center;*/
+
+}
+#form1{
+	background:white;
+	width: 700px;
+	height: 600px;
+	margin: 50px auto;
+	border: 10px solid white;
+	color: blue;
+	font-size: 150%;
+}
+
+</style>
+</head>
+<body>
+<div  id="div1" >
+	<h1 align="center">Customer survey form</h1>
+	<form id="form1" >
+		<table>
+			
+		<tr><td>Name</td>
+			<td>Email</td>
+		</tr>
+		<tr><td><textarea rows="2" cols="30"></textarea></td>
+			<td><textarea rows="2" cols="30"></textarea></td>
+		</tr>
+		</table>
+		<p>Are you working Currently ?</p>
+		yes<input type="radio" name="something">
+		no<input type="radio" name="something"><br>
+		<p>Do you have any backlogs ?</p>
+		yes<input type="radio" name="something1">
+		no<input type="radio" name="something1"><br>
+		<p>Do you satisfied this survey ?</p>
+		Satisfied<input type="radio" name="something2">
+		Unsatisfied<input type="radio" name="something2">
+		Unsatisfied<input type="radio" name="something2">
+		<p>Enter your Commments</p>
+		<textarea rows="4" cols="50"></textarea><br>
+		<input type="submit" value="Submit">
+	</form>
+</div>
+</body>
+</html>
